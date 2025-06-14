@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rehanalxm Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/assests/R-logo.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <canvas id="matrix"></canvas>
+    <nav>
+      <!-- <h1 onclick="location.reload()">Rehanalxm</h1> -->
+      <h1 id="logo" style="cursor: pointer">Rehanalxm</h1>
+
+      <div class="menu" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am Rehanalam, a self-motivated and passionate developer focused on
+          building efficient, scalable, and beautiful software solutions. With a
+          strong grasp of both frontend and backend technologies, I transform
+          complex challenges into elegant experiences. I thrive in collaborative
+          environments and enjoy working on innovative projects that push
+          boundaries and deliver value to users worldwide.
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <a href="https://rehanalxm.github.io/Weather_App/" target="_blank">
+              <img src="/assests/weather-icon.png" alt="Project 1" />
+              <h3>Weather App</h3>
+              <p>
+                A live weather forecast app using OpenWeatherMap API with a
+                responsive design.
+              </p>
+            </a>
+          </div>
+          <div class="project-card">
+            <a
+              href="https://rehanalxm.github.io/Simon_Says_Game/"
+              target="_blank"
+            >
+              <img src="/assests/simon-logo.png" alt="Project 2" />
+              <h3>Simon Says Game</h3>
+              <p>
+                A classic memory game with animations built using JavaScript.
+              </p>
+            </a>
+          </div>
+          <div class="project-card">
+            <a href="https://rehanalxm.github.io/To-Do-List-/" target="_blank">
+              <img src="/assests/todo.png" alt="Project 3" />
+              <h3>To-Do List</h3>
+              <p>
+                A simple and intuitive to-do list application built with HTML,
+                CSS, and JavaScript.
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section id="skills">
+        <h2>Skills</h2>
+        <p><strong>Languages :</strong> HTML, CSS, JavaScript, C, C++,</p>
+        <p><strong>Frameworks :</strong> React, Node.js, Express, Bootstrap</p>
+        <p><strong>Tools :</strong> Git, GitHub, VS Code, Figma, Postman</p>
+        <p><strong>Concepts :</strong> REST APIs, Authentication, Responsive Design</p>
+      </section> -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid-themed">
+          <div
+            class="skill-card-themed"
+            onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/HTML')"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML"
+            />
+            <span>HTML</span>
+          </div>
+          <div
+            class="skill-card-themed"
+            onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/CSS')"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS"
+            />
+            <span>CSS</span>
+          </div>
+          <div
+            class="skill-card-themed"
+            onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/JavaScript')"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript"
+            />
+            <span>JavaScript</span>
+          </div>
+          <div
+            class="skill-card-themed"
+            onclick="window.open('https://react.dev/learn')"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React"
+            />
+            <span>React</span>
+          </div>
+          <div
+            class="skill-card-themed"
+            onclick="window.open('https://nodejs.org/en/learn')"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              alt="Node.js"
+            />
+            <span>Node.js</span>
+          </div>
+          <div
+            class="skill-card-themed"
+            onclick="window.open('https://expressjs.com/en/starter/installing.html')"
+          >
+            <img src="assests/express-js.png" alt="Express.js" />
+            <span>Express</span>
+          </div>
+          <div
+            class="skill-card-themed"
+            onclick="window.open('https://www.mongodb.com/docs/manual/')"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+              alt="MongoDB"
+            />
+            <span>MongoDB</span>
+          </div>
+          <div
+            class="skill-card-themed"
+            onclick="window.open('https://mongoosejs.com/docs/')"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongoose/mongoose-original.svg"
+              alt="Mongoose"
+            />
+            <span>Mongoose</span>
+          </div>
+          <div
+            class="skill-card-themed"
+            onclick="window.open('https://git-scm.com/doc')"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="Git"
+            />
+            <span>Git</span>
+          </div>
+          <div
+            class="skill-card-themed"
+            onclick="window.open('https://github.com/features')"
+          >
+            <img src="assests/github.png" alt="GitHub" />
+            <span>GitHub</span>
+          </div>
+          <div
+            class="skill-card-themed"
+            onclick="window.open('https://code.visualstudio.com/docs')"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+              alt="VS Code"
+            />
+            <span>VS Code</span>
+          </div>
+          <div
+            class="skill-card-themed"
+            onclick="window.open('https://www.postman.com/api-platform')"
+          >
+            <img
+              src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+              alt="Postman"
+            />
+            <span>Postman</span>
+          </div>
+          <div
+            class="skill-card-themed"
+            onclick="window.open('https://www.npmjs.com/')"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
+              alt="npm"
+            />
+            <span>npm</span>
+          </div>
+          <div
+            class="skill-card-themed"
+            onclick="window.open('https://en.wikipedia.org/wiki/Authentication')"
+          >
+            <img src="assests/a & a.jpg" alt="Auth" />
+            <span>Auth</span>
+          </div>
+          <div
+            class="skill-card-themed"
+            onclick="window.open('https://en.wikipedia.org/wiki/CRUD')"
+          >
+            <img
+              src="https://img.icons8.com/color/48/data-configuration.png"
+              alt="CRUD"
+            />
+            <span>CRUD</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+          <div class="social-icons">
+            <a
+              href="https://github.com/rehanalxm"
+              target="_blank"
+              class="icon github"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/rehan-alam-282b54312/?originalSubdomain=in"
+              target="_blank"
+              class="icon linkedin"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://instagram.com/rehanalxm"
+              target="_blank"
+              class="icon instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100043843393383"
+              target="_blank"
+              class="icon facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </div>
+
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xeokgdlw"
+            method="POST"
+          >
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="5"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <footer>&copy; 2025 Rehanalxm | All rights reserved.</footer>
+    <script src="app.js"></script>
+  </body>
+</html>
